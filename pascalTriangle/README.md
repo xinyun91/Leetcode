@@ -1,6 +1,8 @@
 # pascalTriangle
 
-#DataStruc: ArrayList, List
+#DataStruc:
+
+ArrayList, List
 
 #Analyze: 
 
@@ -22,4 +24,12 @@ the 1st and the last one are 1's
 
 others are nth+(n-1)th in previous row
 
-#Algorithm: Current[n]=Previous[n]+Previous[n-1];
+#Time Complexity:
+
+ex. O(5+4+3+2+1+5)
+
+O(n+...+1+n)=O((n+1)*n/2+n)=O(n^2/2+n/2+n)=O(n^2)
+
+#Algorithm: 
+
+Current[n]=Previous[n]+Previous[n-1];
