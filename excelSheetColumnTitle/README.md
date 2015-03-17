@@ -41,3 +41,38 @@
         n/=26;
      }
   
+#Solution 2 & 3
+ 
+  #Analyze:
+ 
+   ex. 1;
+   
+    1-1=0
+    0%26=0 => (char)('A'+0) => A      => A
+   
+   ex. 731; 
+   
+    731-1=730
+    730%26=2 => (char)('A'+2) => C
+    730/26=28
+    
+    28-1=27
+    27%26=1 => (char)('A'+1) => B     => ABC
+    27/26=1
+    
+    1-1=0
+    0%26=0 => (char)('A'+1-1) => A
+    0/26=0
+    
+ #Psuedocode:
+ 
+    while(n not zero){
+       n=n-1;
+       StringBuilder.insert(0, (char)('A'+n%26));}
+       n/=26;
+     }
+    
+ #Time Complexity:
+ 
+    O(n)
+ 
