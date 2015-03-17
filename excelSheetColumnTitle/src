@@ -1,0 +1,15 @@
+public class Solution {
+    public String convertToTitle(int n) {
+        StringBuilder sb=new StringBuilder();
+        while(n!=0){
+            int each= n%26;
+            if(each==0) {
+                n-=26;
+                sb.insert(0,'Z');
+            }
+            else sb.insert(0, (char)('A'+each-1));
+            n/=26;
+        }
+        return sb.toString();
+    }
+}
