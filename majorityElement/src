@@ -1,0 +1,32 @@
+/*Solution1(prefer): worst O(n)*/
+public class Solution {
+    public int majorityElement(int[] num) {
+        int r=0;
+        int standard=num.length/2;
+        Arrays.sort(num);
+        for(int i=1;i<num.length;i++){
+            if(num[i]==num[i-1]) {
+                r++;
+                if(r>=standard) return num[i];
+            }
+            else r=0;
+        }
+        return num[num.length-1];
+    }
+}
+
+/*Solution2: O(n)*/
+public class Solution {
+    public int majorityElement(int[] num) {
+        int c=0;
+        int target=0;
+        for(Integer i:num){
+            if(c==0){target=i; c++;}
+            else {
+                if(i==target) c++;
+                else c--;
+                }
+        }
+        return target;
+    }
+}
