@@ -15,7 +15,9 @@ ArrayList, List
 
 #Algorithm: 
 
-cur[n]=pre[n]+pre[n-1]  (except 1st and last element)
+cur[n]=pre[n]+pre[n-1];  
+
+(except 1st and last element)
 
 #Time Complexity: 
 
