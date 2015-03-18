@@ -27,7 +27,15 @@
   #Pseudocode:
   
      for(each rows from 0 to nRows-1){
-         while(indexofRow<lengthofString)
+         key=true;
+         while(index<lengthofString){
+            get char at index and insert to string
+            if(1st or last row) index=index+nRows*2-2;
+            else{
+              if(key) {index=index+nRows*2-2(i+1); key=false;}
+              else {index=index+2*i; key=true;}
+            }
+         }
      }
     
                                                               
