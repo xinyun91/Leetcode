@@ -1,0 +1,13 @@
+public class Solution {
+    public int reverse(int x) {
+        long xx=(long)x;
+        long r=0;
+        while(xx!=0){
+           long carry=xx%10;
+           xx/=10;
+           r=r*10+carry;
+        }
+        if(r>=Integer.MAX_VALUE||r<=Integer.MIN_VALUE) return 0;
+        return (int)r;
+    }
+}
