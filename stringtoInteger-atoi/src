@@ -1,0 +1,21 @@
+public class Solution {
+    public int atoi(String str) {
+        if(str.equals("")) return 0;
+        long r=0;
+        int sign=1;
+        int i=0;
+        char[] chr=str.toCharArray();
+        /*discards whitespace characters until the first non-whitespace character*/
+        while(chr[i]==' ') i++;
+        /*takes an initial plus or minus sign*/
+        if(chr[i]=='-') {sign=-1; i++;}
+        else if(chr[i]=='+') {sign=1; i++;}
+        /*overflow control*/
+        while(i<chr.length&&Character.isDigit(chr[i])){
+            r=r*10+(chr[i++]-'0');
+            if(r*sign>=Integer.MAX_VALUE) return Integer.MAX_VALUE;
+            if(r*sign<=Integer.MIN_VALUE) return Integer.MIN_VALUE;
+        }
+        return (int)r*sign;
+    }
+}
