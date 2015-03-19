@@ -1,0 +1,12 @@
+public class Solution {
+    public boolean isPalindrome(int x) {
+        if(x<0) return false;
+        long xx=(long) x;
+        long r=0;
+        while(xx!=0){
+            r=r*10+xx%10;
+            xx/=10;
+        }
+        return (long)x==r;
+    }
+}
