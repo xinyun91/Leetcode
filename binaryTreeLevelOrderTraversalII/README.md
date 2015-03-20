@@ -4,7 +4,7 @@
     
  #Algorithm:
  
-    Tree Traverse (BFS--pre-order)
+    Tree Traverse (BFS)
     
  #Pesudocode:
  
