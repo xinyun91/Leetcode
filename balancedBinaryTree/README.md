@@ -8,7 +8,10 @@
      
  #Analyze:
  
-     calculate depth of left and right branch, and find their diffrence, is larger than '1', then invalid balanced BT
+     Calculate depth of left and right branch, 
+     find their diffrence,
+     if difference is larger than '1', 
+     then Binary Tree is unbalanced.
      
  #Pseudocode:
  
