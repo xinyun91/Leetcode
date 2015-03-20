@@ -1,0 +1,10 @@
+public class Solution {
+    public boolean isValid(String s) {
+        Stack<Character> stack=new Stack<Character>();
+        for(char chr:s.toCharArray()){
+            if(stack.empty()||chr-stack.peek()>2||chr-stack.peek()==0) stack.push(chr);
+            if(chr-stack.peek()<=2&&chr-stack.peek()>0) stack.pop();
+        }
+        return stack.empty();
+    }
+}
