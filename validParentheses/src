@@ -3,7 +3,7 @@ public class Solution {
         Stack<Character> stack=new Stack<Character>();
         for(char chr:s.toCharArray()){
             if(stack.empty()||chr-stack.peek()>2||chr-stack.peek()==0) stack.push(chr);
-            /or if(chr-stack.peek()==2||chr-stack.peek()==1) stack.pop();/
+            /*or if(chr-stack.peek()==2||chr-stack.peek()==1) stack.pop();*/
             if(chr-stack.peek()<=2&&chr-stack.peek()>0) stack.pop();
         }
         return stack.empty();
