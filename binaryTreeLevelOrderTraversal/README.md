@@ -19,7 +19,7 @@
       addLevel(l,level+1,root.left);
       addLevel(l,level+1,root.right);
       
-   levelOrder(TreeNode root):
+    levelOrder(TreeNode root):
       List<List<Integer>> l=new List<List<Integer>>;
       addLevel(l,0,root);
       return l;
