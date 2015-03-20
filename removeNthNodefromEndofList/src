@@ -4,10 +4,10 @@ public class Solution {
         ListNode b=head;
         while(n-->0) a=a.next;
         if(a==null) return head.next;
-        else{
+       // else{
             while(a.next!=null){a=a.next; b=b.next;}
             b.next=b.next.next;
-        }
+       // }
         return head;
     }
 }
