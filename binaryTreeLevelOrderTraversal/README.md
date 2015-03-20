@@ -4,7 +4,7 @@
     
  #Algorithm:
  
-    Tree Traversal(BFS--pre-order)
+    Tree Traversal(BFS)
     
  #Analyze:
  
