@@ -6,7 +6,7 @@ public class Solution {
     }
     private void addLevel(List<List<Integer>> l, int level, TreeNode root){
         if(root==null) return;
-        if(l.size()-1<level) l.add(0,new ArrayList<Integer>());
+        if(l.size()==level) l.add(0,new ArrayList<Integer>());
         l.get(l.size()-level-1).add(root.val);
         addLevel(l,level+1,root.left);
         addLevel(l,level+1,root.right);
