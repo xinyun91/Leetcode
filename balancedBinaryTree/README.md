@@ -4,6 +4,7 @@
      
  #Algorithm:
  
+     Tree Traversal/search:
      DFS (post-order)
      
  #Analyze:
