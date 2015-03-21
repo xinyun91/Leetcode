@@ -6,8 +6,8 @@
  
     Note that the array have been sorted，
     log the length of array, while find duplicated one, length decrease,
-    while reach the diffrent element, 
-    move the diffrent towards beginning of the array to overide the duplicate one
+    while find element to be unduplicated, 
+    ovewrite the duplicate one
     
  #Pseudocode:
  
