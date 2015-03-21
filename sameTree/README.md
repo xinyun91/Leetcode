@@ -1,16 +1,16 @@
-#Data Structrue:
+ #Data Structrue:
 
      Binary Tree
    
-#Algorithm:
+ #Algorithm:
 
      DFS(pre-order), recursion(call back to compare if two nodes are same)
    
-#Analyze:
+ #Analyze:
 
      trace left and right branch respectively, and compare if it's equal
    
-#Pseudocode:
+ #Pseudocode:
 
      if(a is null&&b is null) return true;
      if(a is null||b is null||a.val!=b.val) return false;
