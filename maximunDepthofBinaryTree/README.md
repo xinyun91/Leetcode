@@ -12,4 +12,7 @@
     
  #Pseudocode:
  
-    if
+    if(root==null) return 0;
+    left=func(root.left);
+    right=func(root.right);
+    return Math.max(left,right)+1;
