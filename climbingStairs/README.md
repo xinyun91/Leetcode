@@ -17,7 +17,7 @@
      
       if(n==1) return 1;
       if(n==2) return 2;
-      return func(n-1)+func(n-3);
+      return func(n-1)+func(n-2);
       Time consuming and exceed time limit.
       
      Create an int array and log # of ways for each extra step, and return element at end of array
