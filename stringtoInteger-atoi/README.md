@@ -4,11 +4,12 @@
     
  #Analyze:
  
-    string is null
-    +/-sign
-    overflow
-    while space 
-    other character other than digit (unable to convert, return 0)
+    what we need to concern:
+    1. string is null
+    2. +/-sign
+    3. overflow
+    4. while space 
+    5. other character other than digit (unable to convert, return 0)
     
  #Pseudocode:
  
