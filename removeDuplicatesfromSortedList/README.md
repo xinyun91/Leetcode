@@ -1,4 +1,4 @@
- #Data Structrue:
+ #Data Structure:
  
     Linked List
     
