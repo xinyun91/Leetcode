@@ -7,9 +7,8 @@ public class Solution {
         while(m>0||n>0||carry>0){
             int m1=m>0?a.charAt(--m)-'0':0;
             int n1=n>0?b.charAt(--n)-'0':0;
-            int bit=(m1+n1+carry)%2;
+            str=Integer.toString((m1+n1+carry)%2)+str;
             carry=(m1+n1+carry)/2;
-            str=Integer.toString(bit)+str;
         }
         return str;
     }
