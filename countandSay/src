@@ -1,0 +1,20 @@
+public class Solution {
+    public String countAndSay(int n) {
+        return helper(n,"1");
+    }
+    private String helper(int n, String s){
+        StringBuilder sb=new StringBuilder();
+        if(n==1) return s;
+        if(n>1){
+            int j=0;
+            for(int i=0; i<s.length(); i++){
+                if(s.charAt(i)!=s.charAt(j)) {
+                    sb.append(i-j).append(s.charAt(j));
+                    j=i;
+                }
+                if(i==s.length()-1) sb.append(i-j+1).append(s.charAt(j));
+            }
+        }
+        return helper(n-1,sb.toString());
+    }
+}
