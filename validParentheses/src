@@ -1,3 +1,5 @@
+Solution 1:
+
 public class Solution {
     public boolean isValid(String s) {
         Stack<Character> stack=new Stack<Character>();
@@ -9,3 +11,15 @@ public class Solution {
         return stack.empty();
     }
 }
+
+Solution 2:
+		Stack<Character> stack=new Stack<Character>();
+		HashMap<Character, Character> h=new HashMap<Character, Character>();
+		h.put('{', '}');
+		h.put('(', ')');
+		h.put('[', ']');
+		for(char c:s.toCharArray()){
+				if(h.keySet().contains(c)) stack.push(c);
+				else if(h.get(stack.peek())==c) stack.pop();
+		}
+		return stack.isEmpty();
